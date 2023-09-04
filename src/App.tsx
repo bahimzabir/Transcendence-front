@@ -11,11 +11,12 @@ import {
 import AddChannel from "./components/AddChannel";
 import "./App.css";
 import Game from "./Game/Game";
-import setOnline from "./components/mainGateway";
+import {setOnline, recieveNotification} from "./components/mainGateway";
 
 
 const App = () => {
     setOnline();
+    recieveNotification();
     return (
         <BrowserRouter>
             <Routes>

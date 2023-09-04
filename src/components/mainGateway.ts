@@ -15,6 +15,12 @@ const setOnline = async () => {
     )
 }
 
+const recieveNotification = () => {
+    socket.on('notification', (data) => {
+        console.log(data)
+    })
+}
 
 
-export default setOnline
+
+export {setOnline, recieveNotification}
