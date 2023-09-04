@@ -41,7 +41,7 @@ const Chat = () => {
                 ...prevMessages,
                 {
                     message: inputValue.trim(),
-                    isSentByMe: false,
+                    isSentByMe: true,
                 },
             ]);
             setInputValue("");

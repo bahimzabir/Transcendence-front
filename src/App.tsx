@@ -11,9 +11,11 @@ import {
 import AddChannel from "./components/AddChannel";
 import "./App.css";
 import Game from "./Game/Game";
+import setOnline from "./components/mainGateway";
 
 
 const App = () => {
+    setOnline();
     return (
         <BrowserRouter>
             <Routes>
